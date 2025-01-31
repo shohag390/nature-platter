@@ -3,3 +3,16 @@
 .sora-font {
     font-family: "Sora", serif;
 }
+
+
+.card-service:hover figure {
+    background-color: #EFEBE3;
+}
+
+.card-service:hover h6 {
+    color: #ffff;
+}
+
+.card-product:hover figure {
+    background-color: #ffff;
+}
