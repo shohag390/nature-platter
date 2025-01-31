@@ -4,16 +4,299 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="./styles/styles.css">
+    <link rel="shortcut icon" href="./images/logo.png" type="image/x-icon">
+    <title>Nature Platter</title>
+
+
+    <!-- tailwind css link -->
     <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+
+    <!-- Fontawesome -->
+    <script src="https://kit.fontawesome.com/9753b0a825.js" crossorigin="anonymous"></script>
+
+    <!-- css link -->
+    <link rel="stylesheet" href="./styles/styles.css">
+
 </head>
 
-<body>
-    <h1 class="text-red-700">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid asperiores cumque
-        eligendi commodi laudantium
-        beatae distinctio, voluptatibus consequatur enim, deleniti ipsam rerum sapiente at! Dolor libero expedita
-        dignissimos quibusdam consequatur?</h1>
+<body class="sora-font md:container md:mx-auto">
+    <!-- header section -->
+    <header class="bg-gradient-to-b from-[#FFFFFF] to-[#EFEBE3]">
+
+        <!-- navbar section -->
+        <nav
+            class="flex items-center justify-between md:py-[20px] py-[10px] md:border-b-0 border-b-[1px] border-[#179800] md:px-[100px] px-[20px]">
+            <a href="#">
+                <img class="h-[45px] md:block hidden" src="./images/logo-header.png" alt="">
+                <img class="h-[50px] md:hidden" src="./images/logo.png" alt="">
+            </a>
+            <ul class="md:flex md:items-center md:gap-[35px] text-[#111111] hidden">
+                <li>
+                    <a href="#">Product</a>
+                </li>
+                <li>
+                    <a href="#">Services</a>
+                </li>
+                <li>
+                    <a href="#">Contact us</a>
+                </li>
+            </ul>
+
+            <div class="md:flex md:items-center md:gap-[20px] hidden">
+                <button class="flex items-center justify-center"><i
+                        class="fa-solid fa-magnifying-glass md:text-[20px] text-[#111111]"></i></button>
+
+                <button class="flex items-center justify-center"><i
+                        class="fa-solid fa-cart-shopping md:text-[20px] text-[#111111]"></i></button>
+                <button
+                    class="py-[8px] px-[30px] text-[#111111] rounded-md border-[2px] border-[#179800] hover:text-[#ffff] hover:bg-[#179800] duration-500">Login</button>
+
+                <button
+                    class="py-[8px] px-[30px] bg-[#179800] rounded-md border-[2px] border-[#179800] text-[#ffffff] hover:bg-[#fff] hover:text-[#111111] duration-500">Register</button>
+            </div>
+
+            <div class="md:hidden">
+                <i class="fa-solid fa-bars text-[28px] text-[#111111]"></i>
+            </div>
+        </nav>
+
+        <!-- Hero section -->
+
+        <section
+            class="flex flex-col items-center justify-center text-center md:pt-[80px] pt-[40px] md:px-[100px] px-[20px]">
+            <h1 class="font-bold md:text-[42px] text-[35px] md:leading-[55px] leading-[45px] text-[#111111]">
+                Freshness <span class="text-[#179800]">You Can <br>
+                    Count</span> On, Prices You'll Love!
+            </h1>
+            <p class="md:pb-[40px] pb-[25px] md:pt-[12px] pt-[8px] text-[#111111]">
+                Shop your daily essentials at unbeatable prices. From fresh produce to pantry <br
+                    class="hidden md:block">
+                staples, we've got
+                you
+                covered every day!
+            </p>
+            <img class="md:h-[600px] h-[350px]" src="./images/hero-vegetables.png" alt="">
+        </section>
+    </header>
+
+    <!-- main section -->
+    <main>
+        <!-- service section -->
+        <section class="md:py-[80px] py-[40px] md:px-[100px] px-[20px]">
+            <h4 class="text-[#179800] font-bold md:text-[25px] text-[23px] md:pb-[35px] pb-[25px]">Services</h4>
+            <div class="grid md:grid-cols-3 grid-cols-1 md:gap-[30px] gap-[20px]">
+
+                <div class="bg-[#EFEBE3] p-[30px] flex flex-col items-center justify-center text-center rounded-lg">
+                    <figure
+                        class="h-[140px] w-[140px] flex items-center justify-center p-[20px] bg-[#fff] rounded-full">
+                        <img src=" ./images/service.png" alt="">
+                    </figure>
+                    <div class="pt-[20px]">
+                        <h6 class="text-[#111111] font-bold text-[20px] pb-[8px]">
+                            24/7 Services
+                        </h6>
+                        <p>
+                            There are several 24/7 text services that provide support for mental health and crisis
+                            situations
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-[#EFEBE3] p-[30px] flex flex-col items-center justify-center text-center rounded-lg">
+                    <figure
+                        class="h-[140px] w-[140px] flex items-center justify-center p-[20px] bg-[#fff] rounded-full">
+                        <img src="./images/delivery.png" alt="">
+                    </figure>
+                    <div class="pt-[20px]">
+                        <h6 class="text-[#111111] font-bold text-[20px] pb-[8px]">
+                            Fast Delivery
+                        </h6>
+                        <p>
+                            Fast delivery text may refer to text messages that convey fast delivery information or
+                            images of fast delivery.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="bg-[#EFEBE3] p-[30px] flex flex-col items-center justify-center text-center rounded-lg">
+                    <figure
+                        class="h-[140px] w-[140px] flex items-center justify-center p-[20px] bg-[#fff] rounded-full">
+                        <img src="./images/healthy.png" alt="">
+                    </figure>
+                    <div class="pt-[20px]">
+                        <h6 class="text-[#111111] font-bold text-[20px] pb-[8px]">
+                            Healthy Products
+                        </h6>
+                        <p>
+                            Healthy products are foods that are low in added sugar, salt, and saturated fat, and high in
+                            fiber, vitamins, and minerals.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Popular Section -->
+        <section class="bg-[#EFEBE3] md:py-[80px] py-[40px] md:px-[100px] px-[20px]">
+            <h4 class="text-[#179800] font-bold md:text-[25px] text-[23px] md:pb-[35px] pb-[25px]">Popular Products</h4>
+            <div class="flex items-centers  md:gap-[20px] gap-[15px]">
+                <div class="h-[400px] w-[35%] bg-gradient-to-br from-[#53DB3A] to-[#FFFFFF] popular-card ">
+                    <h4>30% off</h4>
+                    <p>
+                        Discover a world of treats, toys,and essentials handpicked for
+                    </p>
+                    <button>Buy Now</button>
+                    <img src="./images/vegetable-offer.png" alt="">
+                </div>
+                <div class="w-[65%] grid grid-cols-3 md:gap-[20px] gap-[15px]">
+                    <div class="p-[15px] bg-[#ffffff] flex items-center justify-between rounded-lg gap-[10px]">
+                        <figure class="h-[90px] w-[45%] bg-[#EFEBE3] flex items-center justify-center rounded-lg">
+                            <img src="./images/onion.png" alt="">
+                        </figure>
+                        <div class="w-[55%]">
+                            <div class="flex items-center gap-[8px]">
+                                <i class="fa-solid fa-star text-[#e7c819]"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h6 class="font-bold py-[2px]">
+                                Onion 1 KG
+                            </h6>
+                            <p class="font-medium">$39.99</p>
+                        </div>
+                    </div>
+                    <div class="p-[15px] bg-[#ffffff] flex items-center justify-between rounded-lg gap-[10px]">
+                        <figure class="h-[90px] w-[45%] bg-[#EFEBE3] flex items-center justify-center rounded-lg">
+                            <img src="./images/onion.png" alt="">
+                        </figure>
+                        <div class="w-[55%]">
+                            <div class="flex items-center gap-[8px]">
+                                <i class="fa-solid fa-star text-[#e7c819]"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h6 class="font-bold py-[2px]">
+                                Onion 1 KG
+                            </h6>
+                            <p class="font-medium">$39.99</p>
+                        </div>
+                    </div>
+                    <div class="p-[15px] bg-[#ffffff] flex items-center justify-between rounded-lg gap-[10px]">
+                        <figure class="h-[90px] w-[45%] bg-[#EFEBE3] flex items-center justify-center rounded-lg">
+                            <img src="./images/onion.png" alt="">
+                        </figure>
+                        <div class="w-[55%]">
+                            <div class="flex items-center gap-[8px]">
+                                <i class="fa-solid fa-star text-[#e7c819]"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h6 class="font-bold py-[2px]">
+                                Onion 1 KG
+                            </h6>
+                            <p class="font-medium">$39.99</p>
+                        </div>
+                    </div>
+                    <div class="p-[15px] bg-[#ffffff] flex items-center justify-between rounded-lg gap-[10px]">
+                        <figure class="h-[90px] w-[45%] bg-[#EFEBE3] flex items-center justify-center rounded-lg">
+                            <img src="./images/onion.png" alt="">
+                        </figure>
+                        <div class="w-[55%]">
+                            <div class="flex items-center gap-[8px]">
+                                <i class="fa-solid fa-star text-[#e7c819]"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h6 class="font-bold py-[2px]">
+                                Onion 1 KG
+                            </h6>
+                            <p class="font-medium">$39.99</p>
+                        </div>
+                    </div>
+                    <div class="p-[15px] bg-[#ffffff] flex items-center justify-between rounded-lg gap-[10px]">
+                        <figure class="h-[90px] w-[45%] bg-[#EFEBE3] flex items-center justify-center rounded-lg">
+                            <img src="./images/onion.png" alt="">
+                        </figure>
+                        <div class="w-[55%]">
+                            <div class="flex items-center gap-[8px]">
+                                <i class="fa-solid fa-star text-[#e7c819]"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h6 class="font-bold py-[2px]">
+                                Onion 1 KG
+                            </h6>
+                            <p class="font-medium">$39.99</p>
+                        </div>
+                    </div>
+                    <div class="p-[15px] bg-[#ffffff] flex items-center justify-between rounded-lg gap-[10px]">
+                        <figure class="h-[90px] w-[45%] bg-[#EFEBE3] flex items-center justify-center rounded-lg">
+                            <img src="./images/onion.png" alt="">
+                        </figure>
+                        <div class="w-[55%]">
+                            <div class="flex items-center gap-[8px]">
+                                <i class="fa-solid fa-star text-[#e7c819]"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h6 class="font-bold py-[2px]">
+                                Onion 1 KG
+                            </h6>
+                            <p class="font-medium">$39.99</p>
+                        </div>
+                    </div>
+                    <div class="p-[15px] bg-[#ffffff] flex items-center justify-between rounded-lg gap-[10px]">
+                        <figure class="h-[90px] w-[45%] bg-[#EFEBE3] flex items-center justify-center rounded-lg">
+                            <img src="./images/onion.png" alt="">
+                        </figure>
+                        <div class="w-[55%]">
+                            <div class="flex items-center gap-[8px]">
+                                <i class="fa-solid fa-star text-[#e7c819]"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h6 class="font-bold py-[2px]">
+                                Onion 1 KG
+                            </h6>
+                            <p class="font-medium">$39.99</p>
+                        </div>
+                    </div>
+                    <div class="p-[15px] bg-[#ffffff] flex items-center justify-between rounded-lg gap-[10px]">
+                        <figure class="h-[90px] w-[45%] bg-[#EFEBE3] flex items-center justify-center rounded-lg">
+                            <img src="./images/onion.png" alt="">
+                        </figure>
+                        <div class="w-[55%]">
+                            <div class="flex items-center gap-[8px]">
+                                <i class="fa-solid fa-star text-[#e7c819]"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h6 class="font-bold py-[2px]">
+                                Onion 1 KG
+                            </h6>
+                            <p class="font-medium">$39.99</p>
+                        </div>
+                    </div>
+                    <div class="p-[15px] bg-[#ffffff] flex items-center justify-between rounded-lg gap-[10px]">
+                        <figure class="h-[90px] w-[45%] bg-[#EFEBE3] flex items-center justify-center rounded-lg">
+                            <img src="./images/onion.png" alt="">
+                        </figure>
+                        <div class="w-[55%]">
+                            <div class="flex items-center gap-[8px]">
+                                <i class="fa-solid fa-star text-[#e7c819]"></i>
+                                <p>4.5</p>
+                            </div>
+                            <h6 class="font-bold py-[2px]">
+                                Onion 1 KG
+                            </h6>
+                            <p class="font-medium">$39.99</p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+        </section>
+
+    </main>
+
+    <!-- footer section -->
+    <footer>
+
+    </footer>
 
 </body>
 
