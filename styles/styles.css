@@ -16,3 +16,15 @@
 .card-product:hover figure {
     background-color: #ffff;
 }
+
+.hero-animation {
+    transition: .2s;
+    animation: hero 2s infinite alternate;
+}
+
+@keyframes hero {
+    0% {
+        transform: scale(1.1);
+    }
+
+}
